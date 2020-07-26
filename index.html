@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+          
+      
+       <div class="topNavbar">
+           <nav class="navbar navbar-expand-md navbar-dark bg-transparent ">
+
+               <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>  PrePCode</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item activeTop">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item program">
+                            <a class="nav-link" href="#">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Submission</a>
+                        </li>
+                    </ul>
+                  </div>
+                
+           </nav>
+       </div>
+       <div class="leftNavbar">
+           <nav id="sidebar">
+               <div class="header">
+                   <h3><i class="fas fa-code"></i>  Programs</h3>
+               </div>
+               <ul class="listOfItems">
+                   <li class="sideNave-items activeLeft" id="1" ><span class="span"></span>
+                       <a href="#">Palindrome <br><span class="span" class="span"></span>       Numbers </a>
+                   </li>
+                   <li class="sideNave-items" id="2" ><span class="span"></span>
+                       <a href="#">Fibonacci Series</a>
+                   </li>
+                   <li class="sideNave-items" id="3" ><span class="span"></span>
+                       <a href="#">Factorial Number</a>
+                   </li>
+                   <li class="sideNave-items" id="4" ><span class="span"></span>
+                       <a href="#">Find 3rd largest<br><span class="span" class="span"></span>number in array</a>
+                   </li>
+                   
+               </ul>
+           </nav>
+       </div>
+       <section class="core-background">
+        <div class="background">
+            <img class="circle1" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle2" src="assets/images/download.png">
+            <img class="circle2" src="assets/images/download.png">
+            <img class="circle2" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle3" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle3" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle4" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle7" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle7" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle5" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle6" src="assets/images/asset-4.a8e83db4%20(1).png">
+            <img class="circle8" src="assets/images/asset-4.a8e83db4%20(1).png">
+        </div>
+       <div class="progOne QuesSet 1 visible ">
+          <div class="container">
+             <div class="jumbotron">
+                  <div class=" Que">
+                    <h1>| TCS Coding practice Question | <br></h1>
+                    <h2>Given a number, the task is to check if this number is Palindrome or not using Command Line Arguments.</h2>
+                 </div>
+                 <div class="example">
+                     <h3>Example:</h3>
+                     <p><span class="subPera">Input:</span> 123<br><span class="subPera" >Output:</span>  No<br><br><span class="subPera" >Input:</span> 585<br><span class="subPera" >Output:</span> Yes<br></p>
+                 </div>
+                 <div class="approach">
+                     <h3>Approach:</h3>
+                     <ul>
+                         <li><i class="fas fa-circle"></i>    Since the number is entered as Command line Argument, there is no need for a dedicated input line</li>
+                         <li><i class="fas fa-circle"></i>    Extract the input number from the command line argument</li>
+                         <li><i class="fas fa-circle"></i>    This extracted number will be in String type.</li>
+                         <li><i class="fas fa-circle"></i>    Convert this number into integer type and store it in a variable, say num</li>
+                         <li><i class="fas fa-circle"></i>    Find the reverse of this number and store in a variable, say rev_num</li>
+                         <li><i class="fas fa-circle"></i>    Check if this rev_num and num are same or not.</li>
+                         <li><i class="fas fa-circle"></i>    If they are not same, the number is not Palindrome</li>
+                         <li><i class="fas fa-circle"></i>    If they are same, the number is a Palindrome</li>
+                     </ul>
+                 </div>
+                 <div class="code">
+                     <ul>
+                         <li class="codeC prep">C</li>
+<!--                         <li class="codeJava prep">Java</li>-->
+                     </ul>
+                     <div class="card progCodeC">
+                        <div class="card-body">
+                           <code class="comment">
+                               // C program to check if a number is Palindrome <br>
+                            </code>
+                            <code class="comment">
+                                // using command line arguments <br>
+                           </code>
+                            
+                                <code class="preprocessor">#include&lt;stdio.h&gt;<br></code>
+                                <code class="preprocessor">#include &lt;stdlib.h&gt; /* atoi */ <br><br></code>
+                            
+                            <code class="function comment">
+                               // Function to reverse the number <br>
+                            </code >
+                            <code class="function">
+                              <span class="span1">int</span>  reverseNumber(<span class="span1">int</span> num) <br>
+                            </code>
+                            <code class="function">
+                            { <br><br>
+                            </code>
+                            <code class="insideFunction comment">
+                                // Variable to store the <br>
+                            </code>
+                            <code class="insideFunction comment">    
+                                // resultant reverse number <br>
+                            </code>
+                            <code class="insideFunction">
+                                    <span class="span1">int</span> rev_num = 0;<br><br>
+                            </code>
+                            <code class="while comment">
+                                // Traverse through the number digit by digit<br> 
+                            </code>
+                            <code class="while">
+                                <span class="span2">While</span> (num > 0) { <br><br>
+                            </code>
+                            <code class="revNum comment">
+                                // Append the last digit of num <br>
+                            </code>
+                            <code class="revNum comment">
+                                // as the next digit of rev_num <br>
+                            </code>
+                            <code class="revNum">
+                                rev_num = rev_num * 10 + num % 10; <br><br>
+                            </code>
+                            <code class="revNum comment">
+                                // Remove the last digit from the num <br>
+                            </code>
+                            <code class="revNum">   
+                                num = num / 10;<br>
+                            </code>
+                            <code class="returnRevNum">
+                                } <br><br>
+                            </code>
+                            <code class="returnRevNum comment">
+                                // Return the reversed number <br>
+                            </code>
+                            <code class="returnRevNum">
+                                <span class="span2">Return</span> rev_num; <br>
+                            </code>
+                            <code class="returnRevNum">
+                                }<br><br>
+                            </code>
+                            <code class="braces comment">
+                                // Function to reverse a string <br>
+                            </code>
+                            <code class="braces">
+                                <span class="span1">int</span> isPalindrome(<span class="span1">int</span> num) <br>
+                            </code>
+                            <code class="braces">
+                                { <br>
+                            </code>
+                            <code class="decleration">
+                                <span class="span1">int</span> rev_num = reverseNumber(num); <br>
+                            </code>
+                            <code class="decleration">
+                                <span class="span2">if</span> (num == rev_num)<br>
+                            </code>
+                            <code class="return1">
+                                <span class="span2">return 1</span>;<br>
+                            </code>
+                            <code class="else">
+                            else<br>
+                            </code>
+                            <code class="return0">       
+                                <span class="span2">return 0</span>;<br> 
+                            </code>
+                            <code class="driverCode">
+                                } <br><br>
+                            </code>
+                            <code class="driverCode comment">
+                                // Driver code <br>
+                            </code>
+                            <code class="driverCode">
+                                <span class="span1">int</span> main(<span class="span1">int</span> argc, <span class="span1">char</span>* argv[]) <br>
+                            </code>
+                            <code class="driverCode">
+                                { <br>
+                            </code>
+                            <code class="ifStatement">
+                                <span class="span1">int</span> num, res = 0; <br><br>
+                            </code>
+                            <code class="ifStatement comment">
+                                // Check if the length of args array is 1<br> 
+                            </code>
+                            <code class="ifStatement">
+                                <span class="span2">if</span> (argc == 1) <br>
+                            </code>
+                            <code class="print">
+                                printf("No command line arguments found.\n"); <br> 
+                            </code>
+                            <code class="else0">
+                                <span class="span2">else</span>{ <br> 
+                            </code>
+                            <code class="decleration1 comment">
+                                // Get the command line argument and <br> 
+                            </code>
+                            <code class="decleration1 comment">
+                                // Convert it from string type to integer type <br> 
+                            </code>
+                            <code class="decleration1 comment">
+                                // using function "atoi( argument)"<br>  
+                            </code>
+                            <code class="decleration1">
+                                num = atoi(argv[1]); <br><br> 
+                            </code>
+                            <code class="decleration1 comment">
+
+                                 // Check if it is Palindrome <br> 
+                            </code>
+                            <code class="decleration1">
+                                res = isPalindrome(num);<br><br>
+                            </code>
+                            <code class="decleration1 comment">  
+
+                                 // Check if res is 0 or 1 <br> 
+                            </code>
+                            <code class="decleration1">
+                                <span class="span2">if</span> (res == 0)<br> 
+                            </code>
+                            <code class="print comment">                   
+                                    // Print No <br> 
+                            </code>
+                            <code class="print">
+                                    printf("No\n");<br> 
+                            </code>
+                            <code class="else0"> 
+                                    <span class="span2">else</span><br> 
+                            </code>
+                            <code class="print comment">
+                                    // Print Yes <br> 
+                            </code>
+                            <code class="print">
+                                    printf("Yes\n"); <br> 
+                            </code>
+                            <code class="return">
+                                    } <br> 
+                            </code>
+                            <code class="return">
+                                    <span class="span2">return 0</span>; <br> 
+                            </code>
+                            <code class="braces1">
+                                    } <br> 
+                            </code>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="output">
+                     <h3>Output: C</h3>
+                     <img src="assets/images/TCS-Coding-Question-Palindrome-Number-C.png">
+                 </div>
+              </div>
+          </div>           
+       </div>
+       <div class="progTwo QuesSet 2">
+           <div class="container">
+             <div class="jumbotron">
+                  <div class=" Que">
+                    <h1>| TCS Coding practice Question | <br></h1>
+                    <h2>Given a number ‘n’, the task is to print the Fibonacci series using Command Line Arguments. The Fibonacci numbers are the numbers in the following integer sequence.</h2>
+                    <div class="sequence">
+                        <p class="p">
+                            0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
+                        </p>
+                        
+                    </div>
+                    <span>In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation</span>
+                    <div class="example1">
+                            Fn = F<sub>n-1</sub> + F<sub>n-2</sub>
+                    </div>
+                    with seed value
+                    <div class="example1">
+                        F<sub>0</sub> = 0 and F<sub>1</sub> = 1.
+                    </div>    
+                 </div>
+                 <div class="example">
+                     <h3>Example:</h3>
+                     <p><span class="subPera">Input:</span> n = 3<br><span class="subPera" >Output:</span>  0, 1, 1<br><br><span class="subPera" >Input:</span> 7<br><span class="subPera" >Output:</span> 0, 1, 1, 2, 3, 5, 8<br></p>
+                 </div>
+                 <div class="approach">
+                     <h3>Approach:</h3>
+                     <ul>
+                         <li><i class="fas fa-circle"></i>    Since the number is entered as Command line Argument, there is no need for a dedicated input line</li>
+                         <li><i class="fas fa-circle"></i>    Extract the input number from the command line argument</li>
+                         <li><i class="fas fa-circle"></i>    This extracted number will be in String type.</li>
+                         <li><i class="fas fa-circle"></i>    Convert this number into integer type and store it in a variable, say num</li>
+                         <li><i class="fas fa-circle"></i>    Find the reverse of this number and store in a variable, say rev_num</li>
+                         <li><i class="fas fa-circle"></i>    Check if this rev_num and num are same or not.</li>
+                         <li><i class="fas fa-circle"></i>    If they are not same, the number is not Palindrome</li>
+                         <li><i class="fas fa-circle"></i>    If they are same, the number is a Palindrome</li>
+                     </ul>
+                 </div>
+                 <div class="code">
+                     <ul>
+                         <li class="codeC prep">C</li>
+<!--                         <li class="codeJava prep">Java</li>-->
+                     </ul>
+                     <div class="card progCodeC">
+                        <div class="card-body">
+                           <code class="comment">
+                               // C program to print the Fibonacci Series <br>
+                            </code>
+                            <code class="comment">
+                                // using command line arguments <br>
+                           </code>
+                            
+                                <code class="preprocessor">#include&lt;stdio.h&gt;<br></code>
+                                <code class="preprocessor">#include &lt;stdlib.h&gt; /* atoi */ <br><br></code>
+                            
+                            <code class="function comment">
+                               // Function to print the Fibonacci Series <br>
+                            </code >
+                            <code class="function">
+                              <span class="span1">void</span>  void fib(<span class="span1">int</span> n) <br>
+                            </code>
+                            <code class="function">
+                            { <br><br>
+                            </code>
+                            <code class="insideFunction">
+                                    <span class="span1">int</span> a = 0, b = 1, c, i;<br><br>
+                            </code>
+                            <code class="ifstatement">
+                                <span class="span2">if</span> (n &lt;= 1) <br>
+                            </code>
+                            <code class="print">
+                                    printf("%d ", a);<br>
+                            </code>
+                            <code class="else"> 
+                                <span class="span2">else</span> { <br>
+                            </code>
+                            <code class="print">
+
+                                    printf("%d %d ", a, b); <br>
+                            </code>
+                            <code class="forState">
+                                    <span class="span2">for</span> (i = 3; i &lt;= n; i++) { <br>
+                            </code>
+                            <code class="insideFor">
+                                        c = a + b; <br>
+                            </code>
+                            <code class="insideFor">
+                                        a = b; <br>
+                            </code>
+                            <code class="insideFor">
+                                        b = c; <br><br>
+                            </code>
+                            <code class="insideFor">
+
+                                        printf("%d ", c); <br>
+                            </code>
+                            <code class="endFor">
+                                    } <br>
+                            </code>
+                            <code class="print2">
+
+                                    printf("\n"); <br>
+                            </code>
+                            <code class="endOfElse">
+                                } <br>
+                            </code>
+                            <code class="endfunction">
+                            } <br>
+                            </code>
+                            <code class="comment">
+
+                            // Driver code <br>
+                            </code>
+                            <code class="main">
+                            <span class="span1">int</span> main(int argc, char* argv[]) <br>
+                            </code>
+                            <code class="startmain">
+                            { <br>
+                            </code>
+                            <code class="declare">
+                                <span class="span1">int</span> num, res = 0; <br>
+                            </code>
+                            <code class="dcomment">
+
+                                // Check if the length of args array is 1 <br>
+                            </code>
+                            <code class="ifStatement">
+                                <span class="span2">if</span> (argc == 1) <br>
+                            </code>
+                            <code class="print">
+                                    printf("No command line arguments found.\n"); <br>
+                            </code>
+                            <code class="else0">
+                                <span class="span2">else</span> { <br>
+                            </code>
+                            <code class="dcomment">
+                                // Get the command line argument and <br>
+                            </code>
+                            <code class="dcomment">
+                                    // Convert it from string type to integer type <br>
+                            </code>
+                            <code class="dcomment">
+                                    // using function "atoi( argument)" <br>
+                            </code>
+                            <code class="num">
+                                    num = atoi(argv[1]); <br>
+                            </code>
+                            <code class="dcomment">
+                                    // Print the Fibonacci series <br>
+                            </code>
+                            <code class="num">
+                                    fib(num); <br>
+                            </code>
+                            <code class="else0">
+                                } <br>
+                            </code>
+                            <code class="return">
+                                return 0; <br>
+                            </code>
+                            <code class="braces1">
+                            } <br>
+                            </code>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="output">
+                     <h3>Output: C</h3>
+                     <img src="assets/images/TCS-Coding-Question-Fibonacci-Series-C.png">
+                 </div>
+              </div>
+          </div>           
+       </div>
+       <div class="progThree QuesSet 3">
+           <div class="container">
+             <div class="jumbotron">
+                  <div class=" Que">
+                    <h1>| TCS Coding practice Question | <br></h1>
+                    <h2>Given a number, the task is to find the Factorial of this number using Command Line Arguments. Factorial of a non-negative integer is the multiplication of all integers smaller than or equal to n.</h2>
+                       
+                        
+                 <div class="example">
+                     <h3>Example:</h3>
+                     <p><span class="subPera">Input:</span> 3<br><span class="subPera" >Output:</span>  6<br><span class="expalin"><span class="subPera" >Explanation:</span> 1 * 2 * 3 = 6</span> <br><br><span class="subPera" >Input:</span> 6<br><span class="subPera" >Output:</span> 720<br><span class="expalin"><span class="subPera" >Explanation:</span> 1 * 2 * 3 * 4 * 5 * 6 = 720</span></p>
+                 </div>
+                 <img class="examplepic" src="assets/images/program-for-factorial-of-a-number-1024x512.png" style="margin-top: 90px; ">
+                 <div class="approach">
+                     <h3>Approach:</h3>
+                     <ul>
+                         <li><i class="fas fa-circle"></i>    Since the number is entered as Command line Argument, there is no need for a dedicated input line</li>
+                         <li><i class="fas fa-circle"></i>    Extract the input number from the command line argument</li>
+                         <li><i class="fas fa-circle"></i>    This extracted number will be in String type.</li>
+                         <li><i class="fas fa-circle"></i>    Convert this number into integer type and store it in a variable, say num</li>
+                         <li><i class="fas fa-circle"></i>    Find the reverse of this number and store in a variable, say rev_num</li>
+                         <li><i class="fas fa-circle"></i>    Check if this rev_num and num are same or not.</li>
+                         <li><i class="fas fa-circle"></i>    If they are not same, the number is not Palindrome</li>
+                         <li><i class="fas fa-circle"></i>    If they are same, the number is a Palindrome</li>
+                     </ul>
+                 </div>
+                 <div class="code">
+                     <ul>
+                         <li class="codeC prep">C</li>
+<!--                         <li class="codeJava prep">Java</li>-->
+                     </ul>
+                     <div class="card progCodeC">
+                        <div class="card-body">
+                           <code class="comment">
+                               // C program to find factorial of a number  <br>
+                            </code>
+                            <code class="comment">
+                                // using command line arguments <br>
+                           </code>
+                            
+                                <code class="preprocessor">#include&lt;stdio.h&gt;<br></code>
+                                <code class="preprocessor">#include &lt;stdlib.h&gt; /* atoi */ <br><br></code>
+                            
+                            <code class="function comment">
+                               // Function to find factorial of given number <br>
+                            </code >
+                            <code class="function">
+                                unsigned int factorial(unsigned <span class="span1">int</span> n) <br>
+                            </code>
+                            <code class="Stfun">
+                                { <br>
+                            </code >
+                            <code class="decleration">
+                                    <span class="span1">int</span> res = 1, i; <br>
+                            </code>
+                            <code class="forState">
+                                    for (i = 2; i &lt;= n; i++) <br>
+                            </code>
+                            <code class="insidefor">
+                                        res *= i; <br>
+                            </code>
+                            <code class="forState">
+                                    return res; <br>
+                            </code>
+                            <code class="endfun">
+                                } <br><br>
+                            </code>
+                            <code class="comment">
+
+                                // Driver code <br>
+                            </code>
+                            <code class="function">
+                                <span class="span1">int</span> main(int argc, char* argv[]) <br>
+                            </code>
+                            <code class="startFun">
+                                { <br><br>
+                            </code>
+                            <code class="decleration">
+                                 <span class="span1">int</span> num, res = 0; <br><br>
+                            </code>
+                            <code class="comment3">
+                                    // Check if the length of args array is 1 <br>
+                            </code>
+                            <code class="ifState">
+                                    if (argc == 1) <br>
+                            </code>
+                            <code class="printf">
+                                    printf("No command line arguments found.\n"); <br>
+                                    <br>
+                            </code>
+                            <code class="elseState">
+                                    else { <br><br>
+                            </code>
+                            <code class="comment3">                           
+
+                                        // Get the command line argument and <br>
+                            </code>
+                            <code class="comment3">
+                                        // Convert it from string type to integer type <br>
+                            </code>
+                            <code class="comment3">
+                                        // using function "atoi( argument)" <br>
+                            </code>
+                            <code class="variablenum">
+                                        num = atoi(argv[1]); <br><br>
+                            </code>
+                            <code class="comment3">
+                                        // Find the factorial <br>
+                            </code>
+                            <code class="print3">
+                                        printf("%d\n", factorial(num)); <br>
+                            </code>
+                            <code class="endElseState">
+                                    } <br>
+                            </code>
+                            <code class="return">
+                                    <span class="span2">return</span> 0; <br>
+                            </code>
+                            <code class="braces">                             
+
+                                } <br>
+                            </code>
+                         </div>
+                     </div>
+                        </div>
+                      </div>
+                      <div class="output">
+                     <h3>Output: C</h3>
+                     <img src="assets/images/TCS-Coding-Question-Fibonacci-Series-C.png">
+                 </div>
+                     </div>
+                 
+          </div>           
+       </div>
+       <div class="progfour QuesSet 4">
+           <div class="container">
+             <div class="jumbotron">
+                  <div class=" Que">
+                    <h1>| Third largest element in an array of distinct elements | <br></h1>
+                    <h2>Given an array of n integers, find the third largest element. All the elements in the array are distinct integers.</h2>
+                        
+                 <div class="example">
+                     <h3>Example:</h3>
+                     <p><span class="subPera">Input:</span>  arr[ ] = {1, 14, 2, 16, 10, 20}<br><span class="subPera" >Output:</span>  The third Largest element is 14<br><span class="expalin"><span class="subPera" >Explanation:</span> Largest element is 20, second largest element is 16 
+and third largest element is 14</span> <br><br><span class="subPera" >Input:</span> 6<br><span class="subPera" >Output:</span> 720<br><span class="expalin"><span class="subPera" >Explanation:</span>1 * 2 * 3 * 4 * 5 * 6 = 720</span></p>
+                 </div>
+                 <div class="approach">
+                     <h3>Approach:</h3>
+                     <ul>
+                         <li><i class="fas fa-circle"></i>    Since the number is entered as Command line Argument, there is no need for a dedicated input line</li>
+                         <li><i class="fas fa-circle"></i>    Extract the input number from the command line argument</li>
+                         <li><i class="fas fa-circle"></i>    This extracted number will be in String type.</li>
+                         <li><i class="fas fa-circle"></i>    Convert this number into integer type and store it in a variable, say num</li>
+                         <li><i class="fas fa-circle"></i>    Find the reverse of this number and store in a variable, say rev_num</li>
+                         <li><i class="fas fa-circle"></i>    Check if this rev_num and num are same or not.</li>
+                         <li><i class="fas fa-circle"></i>    If they are not same, the number is not Palindrome</li>
+                         <li><i class="fas fa-circle"></i>    If they are same, the number is a Palindrome</li>
+                     </ul>
+                 </div>
+                 <div class="code">
+                     <ul>
+                         <li class="codeC prep">C</li>
+<!--                         <li class="codeJava prep">Java</li>-->
+                     </ul>
+                     <div class="card progCodeC">
+                        <div class="card-body">
+                           <code class="comment">
+                               // C program to find Third Largest number of array  <br>
+                            </code>
+                            <code class="comment">
+                                // using command line arguments <br>
+                           </code>
+                            
+                                <code class="preprocessor">#include&lt;stdio.h&gt;<br></code>
+                                <code class="preprocessor">#include &lt;stdlib.h&gt; /* atoi */ <br><br>
+                            </code>
+                            <code class="func">
+                                    <span class="span2">void</span> thirdLargest(<span class="span1">int</span> arr[], <span class="span1">int</span> arr_size)<br>
+                            </code>
+                            <code class="func"> 
+                                    { <br>
+                            </code>
+                            <code class="insideFunc">
+                                        /* There should be atleast three elements */<br><br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span2">if</span> (arr_size &lt; 3) <br>
+                            </code>
+                            <code class="insideFunc">
+                                        { <br>
+                            </code>
+                            <code class="printFunc">
+                                            printf(" Invalid Input "); <br>
+                            </code>
+                            <code class="printFunc">
+                                            <span class="span2">retun</span>; <br>
+                            </code>
+                            <code class="insideFunc">
+                                        } <br>
+                            </code>
+                            <code class="insideFunc">
+
+                                        // Find first largest element <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span1">int</span> first = arr[0]; <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span2">for</span> (<span class="span1">int</span> i = 1; i &lt; arr_size ; i++) <br>
+                            </code>
+                            <code class="insideFunc">
+                                            <span class="span2">if</span> (arr[i] > first) <br>
+                            </code>
+                            <code class="decl">
+                                                first = arr[i]; <br>
+                            </code>
+                            <code class="insideFunc">
+
+                                        // Find second largest element <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span1">int</span> second = INT_MIN; <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span2">for</span> (<span class="span1">int</span> i = 0; i &lt; arr_size ; i++)<br>
+                            </code>
+                            <code class="insideFunc"> 
+                                            <span class="span2">if</span> (arr[i] > second &amp;&amp; arr[i] &lt; first) <br>
+                            </code>
+                            <code class="decl">
+                                                second = arr[i]; <br>
+                            </code>
+                            <code class="insideFunc">
+                                        // Find third largest element <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span1">int</span> third = INT_MIN; <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span2">for</span> (<span class="span1">int</span> i = 0; i &lt; arr_size ; i++) <br>
+                            </code>
+                            <code class="insideFunc">
+                                            <span class="span2">if</span> (arr[i] > third &amp;&amp; arr[i] &lt;  second) <br>
+                            </code>
+                            <code class="decl">
+                                                third = arr[i]; <br>
+                            </code>
+                            <code class="insideFunc">
+
+                                        printf("The third Largest element is %d\n", third); <br>
+                            </code>
+                            <code class="func">
+                                    }<br>
+                            </code>
+                            <code class="func"> 
+
+                                    /* Driver program to test above function */<br>
+                            </code>
+                            <code class="func">
+                                    <span class="span1">int</span> main() <br>
+                            </code>
+                            <code class="func">
+                                    { <br>
+                            </code>
+                            <code class="insideFunc">
+                                        <span class="span1">int</span> arr[] = {12, 13, 1, 10, 34, 16};<br>
+                            </code>
+                            <code class="insideFunc"> 
+                                        <span class="span1">int</span> n = sizeof(arr)/sizeof(arr[0]); <br>
+                            </code>
+                            <code class="insideFunc">
+                                        thirdLargest(arr, n); <br>
+                            </code>
+
+                            <code class="return">
+                                    return 0; <br>
+                            </code>
+                            <code class="braces">                             
+
+                                } <br>
+                            </code>
+                         </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="output">
+                     <h3>Output: C</h3>
+                     <img src="assets/images/TCS-Coding-Question-Fibonacci-Series-C.png">
+                     <div class="complexity">
+                       <h3>Complexity Analysis:</h3>
+                       <p><span class="head"><i class="fas fa-circle"></i>Time Complexity: O(n).</span><br>
+                        <span class="con">    As the array is iterated thrice and is done in a constant time.<br>
+                        </span>
+                        <span class="head"><i class="fas fa-circle"></i>Space complexity: O(1).</span><br><span class="con">
+                        No extra space is needed as the indices can be stored in constant space.</span>
+            
+                    </p>
+                
+                    </div>
+                     
+                 </div>
+                     </div>
+                 
+          </div>           
+        </div>
+        <div class="core-down-background">
+           <img class="down" src="assets/images/export.png.jpg.png">            
+        </div>
+        
+        </section>
+<!--
+        <div class="footer"
+            <footer>Copyright 2020 @ Amrita Das</footer>
+        </div>
+-->
+<!--
+       <script type="text/javascript" src="assets/js/particles.js"></script>
+       <script type="text/javascript" src="assets/js/app.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jqueryUI.js"></script>
+        <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>   
